@@ -1,0 +1,813 @@
+@font-face {
+    font-family: choral;
+    src: url(../fonts/choral.ttf);
+}
+html{
+    overflow-x: hidden;
+    font-family: choral;
+    height: auto;
+    background-color: #000;
+}
+body{
+    font-family: choral;
+}
+.navbar-nav{
+    font-size: 2rem;
+    padding-right: 10rem;
+}
+.navbar{
+    height: 75vh;
+    color: white;
+    font-family: choral;
+    background: linear-gradient(#00000050, #00000050), url('../image/groupe.jpg');
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+}
+
+
+.nav-item .nav-link{
+    transition: 0.3s ease;
+}
+
+.nav-link{
+    transition: 0.3s ease;
+}
+
+.nav-link:hover{
+    transform: scale(1.1);
+}
+
+main {
+    background: linear-gradient(to bottom, #724f3b, #a67354 );
+    font-family: choral;
+    height: auto;
+}
+
+main .main-top h2{
+    border-bottom: 2px solid white;
+    width: 24%;
+    font-size: 210%;
+}
+
+.container-fluid{
+    margin-top: -25%;
+}
+
+.container-fluid h2{
+    color: #dadada;
+    font-family: choral;
+    display: block;
+    position: absolute;
+    margin-top: 25%;
+    width: 50%;
+    margin-left: 32%;
+    left: 0;
+    font-size: 4.5rem;
+}
+
+.card{
+    max-width: 580px;
+    margin-left: 2%;
+    margin-top: 8%;
+    background: #feda;
+    font-size: 1.2rem;
+}
+
+
+main .container-card .card{
+    background: transparent;
+    border: none;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
+    border-radius: 0px;
+}
+main .container-card .card ul li{
+    list-style: none;
+}
+
+.text-container {
+    position: absolute;
+    top: 53%; /* Ajustez selon vos besoins */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Plus élevé que la vidéo et le reste pour assurer sa visibilité */
+    text-align: center;
+    color: white;
+}
+.text-container-contact {
+    position: absolute;
+    top: 53%; /* Ajustez selon vos besoins */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Plus élevé que la vidéo et le reste pour assurer sa visibilité */
+    text-align: center;
+    color: white;
+}
+
+.text-container-concert {
+    position: absolute;
+    top: 53%; /* Ajustez selon vos besoins */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20; /* Plus élevé que la vidéo et le reste pour assurer sa visibilité */
+    text-align: center;
+    color: white;
+    font-family: 'choral';
+}
+
+.text-container h2 {
+    font-size: 4rem; /* Taille ajustable selon vos besoins */
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Pour mieux contraster avec la vidéo */
+    font-family: 'choral';
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animate {
+    animation: fadeIn 1s ease-in-out; /* Modifiez la durée et le timing si nécessaire */
+}
+
+
+.navbar-toggler:hover{
+    border: 1px solid white;
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+.image-container {
+    position: relative;
+    display: inline-block;
+    justify-content: center;
+    width: 70%;
+    left: 0;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    transition: 0.4s ease;
+    border-radius: 0.5rem;
+}
+
+.card .image-container:hover img {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.space{
+    height: 8rem;
+}
+
+.centered-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#bouton1{
+  background-color: transparent;
+  border-bottom: 2px solid white;
+  border-radius: 0px;
+  width: 30%;
+  margin-top: 3rem;
+  font-weight: bold;
+  display: none;
+  font-size: 1.4rem;
+}
+
+#cardchef li{
+    list-style: none;
+}
+#cardchef p{
+    text-decoration: underline;
+}
+#bouton1{
+    transition: 1s ease-in-out;
+}
+
+#bouton:active{
+    border: NONE;
+}
+
+#demo1{
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+    width: 35%;
+    font-size: 1.2rem;
+    color: white;
+}
+button#bouton1 span{
+    transition: 0.5s ease-in-out;
+}
+
+button#bouton1:focus span{
+    transform: rotate(-160deg);
+}
+
+#demo1 ul li{
+    list-style: none;
+    padding-right: 8%;
+}
+
+#demo1 span{
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#bouton2{
+    background-color: transparent;
+    border-radius: 0px;
+    border-bottom: 2px solid white;
+    width: 30%;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  button#bouton2 span{
+    transition: 0.5s ease-in-out;
+}
+
+button#bouton2:focus span{
+    transform: rotate(-160deg);
+}
+  
+  #bouton:active{
+      border: NONE;
+  }
+  
+  #demo2{
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      width: 40%;
+      font-size: 1.2rem;
+      color: white;
+  }
+  
+  #demo2 ul li{
+      list-style: none;
+  }
+  
+  #demo2 span{
+      text-decoration: underline;
+      font-weight: bolder;
+  }
+
+  #demo2 a{
+    color: #05036F;
+  }
+  
+
+#bouton3{
+    background-color: transparent;
+    border-radius: 0px;
+    border-bottom: 2px solid white;
+    width: 30%;
+    margin-top: 3rem;
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+  
+  
+  #bouton:active{
+      border: NONE;
+  }
+  
+  #demo3{
+      margin-top: 1rem;
+      padding-bottom: 1rem;
+      width: 40%;
+      font-size: 1.2rem;
+      color: white;
+  }
+  
+  #demo3 ul li{
+      list-style: none;
+  }
+  
+  #demo3 span{
+      text-decoration: underline;
+      font-weight: bolder;
+  }
+
+  #demo3 a{
+    color: #05036F;
+  }
+
+.container-rejoindre{
+    background: linear-gradient(#00000060, #00000060), url("https://i.ibb.co/TmSdcRw/choral.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 110vh;
+    color: white;
+    font-family: choral;
+}
+
+#bouton4{
+    height: 10%;
+    margin-left: 84%;
+    margin-top: 34%;
+    backdrop-filter: blur(40px);
+
+}
+
+#bouton4{
+    color: #ffffff;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: 0.4s ease;
+    animation: horizontal-shaking 0.35s infinite;
+    font-size: 1.5rem;
+}
+
+#bouton4:hover{
+    color: white;
+    border: 1px solid white;
+    transform: scale(1.05);
+    animation: none;
+}
+
+.container-repertoir{
+    justify-items: center;
+}
+
+.container-repertoir h2{
+    padding-top: 2rem;
+    border-bottom: 2px solid white;
+    width: 30%;
+    color: white;
+}
+
+.container-repertoir p{
+    margin-top: 2rem;
+    color: white;
+    width: 40%;
+    font-size: 1.3rem;
+}
+
+.container-repertoir img{
+    border-radius: 50rem;
+    width: 15rem;
+}
+
+.container-repertoir .card img{
+    border-radius: 0rem;
+}
+
+.container-repertoir button{
+    width: 15rem;
+    background: #0d6dfd1d;
+    border: 1px solid white;
+    transition: 0.4s ease;
+    border-radius: 0rem;
+}
+
+.container-repertoir button:hover{
+    backdrop-filter: blur(2px);
+    background: #0d6dfd67;
+    border: 1px solid white;
+    border-radius: 0.5rem;
+}
+
+
+.container-repertoir .card{
+    max-width: 340px;
+    border: 1px solid transparent;
+}
+
+text-container-concert{
+    display: block;
+}
+
+#recru-card{
+    background-color: transparent;
+}
+
+#recru-card .card-title{
+    color: white;
+    font-weight: bold;
+}
+#recru-card .card-text{
+    width: 60%;
+}
+
+#recru-card .btn{
+    background: #05036F;
+    color: white;
+    border-radius: 5rem;
+}
+
+#recrut-card{
+    background-color: #5e677e;
+}
+
+#recrut-card .card-title{
+    color: white;
+    font-weight: bold;
+}
+#recrut-card .card-text{
+    width: 60%;
+}
+
+#recrut-card .btn{
+    background: #fff;
+    color: black;
+    border-radius: 5rem;
+    font-weight: bold;
+}
+
+#contact label{
+    color: blue;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+#contact-btn{
+    padding: 7px; 
+    width: 14%; 
+    border: 1px solid black; 
+    color: blue;
+}
+
+#contact input{
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+#amk{
+    width: 32%;
+}
+
+/* Footer CODE  */
+
+.footer{
+    background: #05036F;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer h4 {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+
+.footer h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: white;
+    height: 2px;
+    width: 50px;
+}
+
+.footer p {
+    color: whitesmoke;
+}
+
+.footer ul li a {
+    font-size: 16px;
+    color: #9c9c9c;
+    transition: all 0.3s ease;
+    border-bottom: 1px solid transparent;
+}
+
+.footer ul li a:hover {
+    color: #fff;
+    padding-left: 2px;
+    border-bottom: 1px solid white;
+}
+
+.footer .btn-outline-light {
+    background-color: rgba(255, 255, 255, 0);
+    transition: all 0.5s ease;
+}
+
+.footer .btn-outline-light:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* FIN footer */
+
+/*responsive*/
+
+@media (max-width: 574px) {
+    .footer .col-md-4 {
+        width: 100%;
+    }
+}
+
+/* FIN responsive FOOTER */
+
+@media screen and (max-width: 1450px){
+    .container-rejoindre #bouton4{
+        font-size: 1dvw;
+        height: 6%;
+        margin-top: 80dvh;
+    }
+}
+
+@media screen and (max-width: 1125px){
+    .navbar-nav{
+        font-size: 1.5rem;
+    }
+    .text-container-propos{
+        position: relative;
+        left: 50%;               /* Positionne l'élément à 50% du conteneur */
+        transform: translateX(-15%); /* Le déplace de moitié de sa largeur pour le centrer */
+        margin: 0 auto;          /* Centre l'élément */
+        padding: 0;
+    }
+    .row .justify-content-center#block1{
+        width: 99% !important;
+    }
+    .container-rejoindre #bouton4{
+        font-size: 1.5dvw;
+        margin-top: 87dvh;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        overflow-x: hidden !important;
+    }
+    .navbar{
+        background: linear-gradient(#00000048, #00000048), url("https://i.ibb.co/TmSdcRw/choral.jpg");
+        background-size: cover;
+        background-position: center;
+        height: auto;
+        color: white;
+        width: 100%;
+        position: fixed;
+        display: block;
+    }
+    nav .container-fluid h2{
+        display: none;
+    }
+    .card{
+        max-width: 400px;
+        margin-left: 10%;
+        margin-bottom: 1.5rem;
+    }
+    .container-fluid{
+        margin-top: 0%;
+    }
+    
+    .container-fluid h2{
+        color: #dadada;
+        font-family: choral;
+        display: block;
+        position: absolute;
+        margin-top: 3%;
+        margin-left: 37%;
+        left: 0;
+        font-size: 1.2rem;
+    }
+
+    .text-container-concert{
+        display: none;
+    }
+    .text-container-contact{
+        display: none;
+    }
+
+    .navbar-brand img{
+        filter:opacity(100%);
+    }
+
+    main h2{
+        padding-top: 3rem;
+    }
+
+    main .main-top h2{
+        width: 57%;
+        font-size: 1.4rem;
+    }
+    .choristes{
+        margin-top: -10%;
+    }
+    .choristes .card{
+        margin-left: 6.5%;
+    }
+    #bouton1{
+    width: 70vw;
+    }
+    #bouton2{
+    width: 70vw;
+    }
+    #bouton3{
+    width: 70vw;
+    }
+    #demo1{
+    width: 90vw;
+    justify-content: center !important;
+    justify-items: center !important;
+    justify-self: center !important;
+    align-items: center !important;
+    align-self: center !important;
+    }
+    #demo1 ul {
+        position: relative;
+        left: 50%;               /* Positionne l'élément à 50% du conteneur */
+        transform: translateX(-50%); /* Le déplace de moitié de sa largeur pour le centrer */
+        margin: 0 auto;          /* Centre l'élément */
+        padding: 0;
+    }
+    #demo2{
+    width: 380px;
+    
+    }
+    #demo2 ul {
+        position: relative;
+        left: 50%;               /* Positionne l'élément à 50% du conteneur */
+        transform: translateX(-50%); /* Le déplace de moitié de sa largeur pour le centrer */
+        margin: 0 auto;          /* Centre l'élément */
+        padding: 0;
+    }
+    #demo3{
+    width: 90vw;
+    }
+    #dem3 ul{
+        border: 1px solid transparent;
+        max-width: 380px;
+        margin-left: -15px;
+    }
+    #bouton4{
+        color:white;
+        border: 1px solid white;
+    }
+    .container-rejoindre{
+        height: 40vh;
+        background-size: cover;
+        background-position: auto;
+        width: 100vw;
+        font-size: 40px;
+    }
+    .container-rejoindre #bouton4{
+        font-size: 15px;
+        margin-left: 74%;
+        margin-top: 22dvh;
+        height: 7dvh;
+        backdrop-filter: blur(2.5px);
+
+    }
+    .container-repertoir button{
+        width: 120%;
+    }
+    .container-repertoir h2{
+        width: 56%;
+    }
+    #contact-btn{
+        width: 80vw;
+    }
+    #block1 a .card{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    #block2 a .card{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+    .space{
+        height: 4vh;
+    }
+    #space2{
+        display: none;
+    }
+    .footer .col-md-4 {
+        width: 50%;
+    }
+    .carousel-inner {
+        position: relative;
+        width: 100dvw !important;
+        overflow: hidden;
+    }
+    .choristes p{
+        font-size: 3dvw !important;
+    }
+    #cardp{
+        width: 320px;
+        margin-left: -8%;
+    }
+    #cardchef{
+        width: 300px;
+    }
+    #cardchef li{
+        list-style: none;
+    }
+    #cardchef p{
+        text-decoration: underline;
+    }
+    #amk{
+        width: 70%;
+    }
+    #amkc{
+        width: 300px;
+    }
+    #amkp{
+        margin-left: -10%;
+    }
+    #cdc{
+        width: 70%;
+    }
+    #cdcp{
+        margin-left: -10%;
+    }
+    #concard{
+        width: 300px;
+    }
+    #gbs{
+        width: 70%;
+    }
+    #hisgbs{
+        width: 70%;
+    }
+    .bouton1{
+        width: 100% !important;
+    }
+    .navbar-nav{
+        padding-right: 0rem;
+    }
+}
+@media screen and (max-width: 426px){
+    
+    #demo1 ul{
+        border: 1px solid transparent;
+        max-width: 380px;
+        margin-left: 3vw;
+    }
+    #demo2{
+        margin-left: 2vw !important;
+    }
+    #demo2 .img{
+        margin-left: 8vw !important;
+    }
+    #demo3{
+        margin-left: 2vw !important;
+    }
+    #demo3 .img{
+        margin-left: 8vw !important;
+    }
+    .bouton1{
+        width: 100% !important;
+    }
+    .container-rejoindre #bouton4{
+    }
+    
+    #recru-card{
+        background-color: transparent;
+        margin-top: 4rem;
+    }
+}
+@media screen and (max-width: 376px){
+    .bouton1{
+        width: 100% !important;
+    }
+    #demo2{
+        width: 330px;
+    }
+    .container-rejoindre button{
+    }
+    .card-body ul, ol{
+        padding-left: 0px;
+    }
+    
+    .container-rejoindre #bouton4{
+        margin-left: 68%;
+    }
+}
+@media screen and (max-width: 321px){
+    .container-rejoindre #bouton4{
+        font-size: 0.8rem
+    }
+    
+    #demo2 ul {
+        position: relative;
+        left: 50%;               /* Positionne l'élément à 50% du conteneur */
+        transform: translateX(-55%); /* Le déplace de moitié de sa largeur pour le centrer */
+        margin: 0 auto;          /* Centre l'élément */
+        padding: 0;
+    }
+}
